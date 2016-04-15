@@ -15,8 +15,8 @@ namespace HelloApp
             this.Content = new Label
             {
                 Text = "Hello Xamarin Forms!",
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.Center
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center
             };
         }
     }
