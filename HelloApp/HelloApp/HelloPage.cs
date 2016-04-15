@@ -12,15 +12,12 @@ namespace HelloApp
     {
         public HelloPage()
         {
-            this.Content = new Label { Text = "Hello Xamarin Forms!"};
-
-
-            SetIosPadding();
-        }
-
-        private void SetIosPadding()
-        {
-            Device.OnPlatform(iOS: () => { Padding = new Thickness(0, 20, 0, 20); });
+            this.Content = new Label
+            {
+                Text = "Hello Xamarin Forms!",
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center
+            };
         }
     }
 }
