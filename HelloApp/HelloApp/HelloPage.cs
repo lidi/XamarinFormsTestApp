@@ -14,7 +14,13 @@ namespace HelloApp
         {
             this.Content = new Label { Text = "Hello Xamarin Forms!"};
 
-            Padding = new Thickness(0,20,0,20);
+
+            SetIosPadding();
+        }
+
+        private void SetIosPadding()
+        {
+            Device.OnPlatform(iOS: () => { Padding = new Thickness(0, 20, 0, 20); });
         }
     }
 }
